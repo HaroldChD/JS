@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Intro | Amazing Events</title>
+    <title>Home | Amazing Events</title>
     <link rel="shortcut icon" href="./images/Logo Amazing Events.png" type="image/x-icon">
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
@@ -13,37 +13,38 @@
 </head>
 
 <body>
-    <header>
-        <img src="./images/Logo Amazing Events.png" alt="Logo" Title="Logo Amazing Events">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-
-            <div>
-                <div class="container-fluid">
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
-                        aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                        <div class="navbar-nav">
-
-
-                            <a class="nav-link" aria-current="page" href="#">Home</a>
-
-                            <a class="nav-link" aria-current="page" href="./pages/upcoming.html">Upcoming Events</a>
-
-                            <a class="nav-link" href="./pages/pastEvents.html">Past Events</a>
-
-                            <a class="nav-link" href="./pages/contact.html">Contact</a>
-
-                            <a class="nav-link" href="./pages/stats.html">Stats</a>
-                        </div>
-                    </div>
-                </div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <img src="./images/Logo Amazing Events.png" alt="" class="logo"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 align-items-center justify-content-lg-end w-100 px-lg-5">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="./pages/pastEvents.html">Past events</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="./pages/upcoming.html">Upcoming events</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="./pages/contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="./pages/stats.html">Stats</a>
+                    </li>
+                </ul>
             </div>
-        </nav>
-    </header>
+        </div>
+    </nav>
+    <header class="col-12 mt-5 d-flex flex-wrap justify-content-center">
 
+    </header>
     <!-- Carrusel -->
     <main>
 
@@ -58,26 +59,23 @@
             </div>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="https://www.eclipseeventos.com/wp-content/uploads/2018/10/INICIO2.jpg"
-                        class="d-block w-100" alt="...">
+                    <img src="./images/events-carrousel-3.jpg" class="d-block w-100" alt="...">
                     <div class="carousel-caption d-none d-md-block">
-                        <h5>HOME</h5>
+                        <h5 class="text-white bg-black bg rounded d-inline-block">HOME</h5>
                         <!-- <p>Some representative placeholder content for the first slide.</p> -->
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="https://www.eclipseeventos.com/wp-content/uploads/2018/10/INICIO2.jpg"
-                        class="d-block w-100" alt="...">
+                    <img src="./images/events-carrousel-2.jpg" class="d-block w-100" alt="...">
                     <div class="carousel-caption d-none d-md-block">
-                        <h5>HOME</h5>
+                        <h5 class="text-white bg-danger bg rounded d-inline-block">HOME</h5>
                         <!-- <p>Some representative placeholder content for the second slide.</p> -->
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="https://www.eclipseeventos.com/wp-content/uploads/2018/10/INICIO2.jpg"
-                        class="d-block w-100" alt="...">
+                    <img src="./images/events-carrousel-1.jpg" class="d-block w-100" alt="...">
                     <div class="carousel-caption d-none d-md-block">
-                        <h5>HOME</h5>
+                        <h5 class="text-white bg-danger bg rounded d-inline-block">HOME</h5>
                         <!-- <p>Some representative placeholder content for the third slide.</p> -->
                     </div>
                 </div>
@@ -98,29 +96,29 @@
     <!-- Fin Carrusel -->
 
 
-    <div class="middle">
+    <div class="middle d-flex flex-wrap gap-3">
 
 
-        <fieldset class="d-flex gap-3 flex-wrap justify-content-center align-items-center">
-            <label for="category-1">Category 1</label>
+        <fieldset class="d-flex gap-3 flex-wrap justify-content-center align-items-center" id="container-checkboxes">
+            <label for="category-1">Food</label>
             <input type="checkbox" id="category-1" name="Categoría 1">
 
-            <label for="category-2">Category 2</label>
+            <label for="category-2">Museum</label>
             <input type="checkbox" id="category-2" name="Categoría 2">
 
-            <label for="category-1">Category 3</label>
+            <label for="category-1">Concert</label>
             <input type="checkbox" id="category-3" name="Categoría 3">
 
-            <label for="category-4">Category 4</label>
+            <label for="category-4">Race</label>
             <input type="checkbox" id="category-4" name="Categoría 4">
 
-            <label for="category-5">Category 5</label>
+            <label for="category-5">Books</label>
             <input type="checkbox" id="category-5" name="Categoría 5">
 
-            <label for="category-6">Category 6</label>
+            <label for="category-6">Cinema</label>
             <input type="checkbox" id="category-6" name="Categoría 6">
 
-            <label for="category-7">Category 7</label>
+            <label for="category-7">Party</label>
             <input type="checkbox" id="category-7" name="Categoría 7">
 
         </fieldset>
@@ -128,14 +126,15 @@
         <div>
             <form class="d-flex">
                 <input class="form-control me-1" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success" type="submit"><i class="bi bi-search"></i></button>
+                <button class="btn btn-outline-success" type="submit" id="container-search"><i
+                        class="bi bi-search"></i></button>
             </form>
         </div>
     </div>
 
-    <div class="middle gap-4 flex-wrap">
+    <div class="middle row justify-content-center align-items-center gap-3 mt-5" id="container-index">
 
-        <div class="card" style="width: 18rem;">
+        <!-- <div class="card" style="width: 18rem;">
             <img src="./images/Maraton3.jpg" class="card-img-top" alt="...">
             <div class="card-body text-center">
                 <h5 class="card-title">Title 1</h5>
@@ -231,15 +230,16 @@
                 <button class="btn btn-outline-success" type="submit">More details</button>
 
             </div>
-        </div>
+        </div> -->
 
     </div>
 
-    <script src="./app.js"></script>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./data.js"></script>
+    <script src="./app.js"></script>
 
-
-    <footer>
+    <footer class="fixed-bottom">
         <div>
             <a href=""><i class="bi bi-instagram"></i></a>
             <a href=""><i class="bi bi-facebook"></i></a>

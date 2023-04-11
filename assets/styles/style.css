@@ -11,7 +11,7 @@ header {
 	padding: 0 1rem;
 }
 
-header img {
+.logo {
 	width: 5rem;
 	height: 1.4rem;
 }
@@ -25,12 +25,12 @@ header img {
 }
 
 .carousel-cover {
-	height: 30rem;
+	height: 1rem;
 	object-position: bottom;
 }
 
 main {
-	min-height: 20rem;
+	min-height: 10rem;
 }
 
 footer {
@@ -55,26 +55,52 @@ footer h3 {
 
 /* Media querys - Mobile*/
 @media only screen and (max-width: 425px) {
+	
 	main {
-		min-height: 6rem;
+		min-height: 1rem;
 	}
 
 	.middle {
-		padding: 1rem 0;
+		width: 80%;
 		display: flex;
 		flex-direction: column;
 		justify-content: space-evenly;
-		align-items: center;
-		min-height: 8rem;
+		align-content: center;	}
+
+	.mobile{
+		display: flex;
+		flex-direction: column;
+		flex-direction: space-evenly;
+		padding: .2rem 0;
+		text-align: center;
 	}
+	
 }
 
 /* Media querys - Tablet*/
 @media only screen and (min-width: 426px) and (max-width: 768px) {
+
+	div.container-fluid{
+		padding: 0 1rem;
+	}
+
+
 	header {
 		width: 100%;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
 	}
-}
+
+	.middle {
+		display: flex;
+		flex-direction: column;
+		padding: .5rem 0;
+	}
+
+	fieldset {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	
